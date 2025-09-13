@@ -17,6 +17,25 @@ if(navClose){
     })
 }
 
+/*=============== LOGIN ===============*/
+const loginButton = document.getElementById('login-button'),
+      loginClose = document.getElementById('login-close'),
+      loginContent = document.getElementById('login-content')
+
+/* Login show */
+if(loginButton){
+    loginButton.addEventListener('click', () =>{
+        loginContent.classList.add('show-login')
+    })
+}
+
+/* Login hidden */
+if(loginClose){
+    loginClose.addEventListener('click', () =>{
+        loginContent.classList.remove('show-login')
+    })
+}
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
